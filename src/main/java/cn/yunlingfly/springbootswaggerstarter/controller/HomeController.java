@@ -16,7 +16,7 @@ public class HomeController {
     @RequestMapping(value = "/index", method = {RequestMethod.GET, RequestMethod.POST})
 // 该注解可以单个用
 //@ApiImplicitParam(name = "id", value = "其实这是演示api",defaultValue = "0", required = true, dataType = "Long", paramType = "path")
-    @ApiImplicitParams({@ApiImplicitParam(name = "id", value = "其实这是演示api", defaultValue = "aa", required = true, dataType = "Integer", paramType = "path"),})
+    @ApiImplicitParams({@ApiImplicitParam(name = "id", value = "其实这是演示api", defaultValue = "12", required = true, dataType = "Integer", paramType = "path"),})
 // 该注解可以单个用
 //@ApiResponse(code = 400, response=String.class, message = "Invalid user supplied")
     @ApiResponses({@ApiResponse(code = 400, response = String.class, message = "Invalid request type"), @ApiResponse(code = 500, message = "server is error")})
